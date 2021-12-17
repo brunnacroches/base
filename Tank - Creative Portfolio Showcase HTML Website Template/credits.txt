@@ -1,0 +1,65 @@
+//////////////////////////////////////////////////////////
+
+Credits
+
+Tank - Creative Portfolio Showcase HTML Website Template
+
+//////////////////////////////////////////////////////////
+
+
+========
+Fonts:
+========
+
+Google Fonts - https://fonts.google.com/
+
+
+
+========
+Icons:
+========
+
+Font Awesome (free version) - https://fontawesome.com/
+
+
+
+=========
+Scripts:
+=========
+
+jQuery - http://www.jquery.com
+GSAP - https://greensock.com/gsap/
+GSAP ScrollToPlugin - https://greensock.com/scrolltoplugin/
+GSAP ScrollTrigger - https://greensock.com/scrolltrigger/
+Smooth Scrollbar - https://github.com/idiotWu/smooth-scrollbar/
+Swiper - https://swiperjs.com
+jQuery Mouse Wheel - https://github.com/jquery/jquery-mousewheel/
+Isotope - http://isotope.metafizzy.co
+Isotope Packery Mode - https://isotope.metafizzy.co/layout-modes/packery.html
+Imagesloaded - http://imagesloaded.desandro.com
+Lightgallery - http://sachinchoolur.github.io/lightGallery/
+uniMail - https://github.com/agragregra/uniMail
+
+
+
+========
+Images:
+========
+
+Unsplash - https://unsplash.com/
+Wojtek Mierzwa: https://www.behance.net/womierzwa
+Futura: https://www.behance.net/MFutura
+Julia Kononenko: https://www.behance.net/ylkul
+
+
+
+========
+Videos:
+========
+
+https://www.pexels.com/videos/
+
+
+
+A super special thanks to those artists and authors who gave their permission to use their amazing works! THANK YOU! :)
+

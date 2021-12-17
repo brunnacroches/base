@@ -1,0 +1,125 @@
+//////////////////////////////////////////////////////////
+
+Tank - Creative Portfolio Showcase HTML Website Template
+
+Changelog
+
+//////////////////////////////////////////////////////////
+
+
+
+======================
+Updating information:
+======================
+
+Explanation: Because of the nature of the HTML, it is not possible to use dynamic features to update the template automatically. All code changes and updates must be made manually!
+
+IMPORTANT!: Before you proceed to update, make sure that you have made copies of all the template files, 
+in case something goes wrong then you can restore the previous version.
+
+The best way to update the template is to use some file comparison software to compare the differences between the old and new template versions (I recommend “WinMerge”: http://winmerge.org/). Then make the necessary changes. I know this may be time-consuming, but unfortunately, there is no easier solution.
+
+
+
+
+-------------------------
+v1.5 - 17 November 2021
+-------------------------
+
+- Fixed: "Back To Top" button issue.
+- Fixed: project share issue if smooth scroll is disabled.
+- Improved: Page header alignment.
+- Improved: Page header parallax.
+- Improved: Page header image shadow.
+
+
+
+
+-------------------------
+v1.4 - 22 September 2021
+-------------------------
+
+- Fixed: Portfolio list item image hover issue.
+- Fixed: Gallery item image parallax issue.
+- Fixed: "Made With Love" appearing issue.
+- Fixed: Page header title issue if dark style is enabled.
+- Improved: Scroll down circle hover.
+
+
+
+
+-------------------------
+v1.3 - 08 September 2021
+-------------------------
+
+- New: Added new page "404.html". (new image "assets/img/page-header/ph-7.jpg")
+- New: Added folder for portfolio smaller images (assets/img/portfolio/small)
+- Fixed: Portfolio filter position and alignment issue.
+- Fixed: Blog post navigation issue.
+- Fixed: Footer columns issue on IOS devices.
+- Fixed: Footer social buttons alignment issue.
+- Fixed: Classic menu issue on smaller screens.
+- Fixed: Image parallax and zoom-in issue on scroll.
+- Fixed: Magnetic cursor issue on Chrome.
+- Improved: General CSS improvements.
+
+
+
+
+----------------------
+v1.2 - 02 August 2021
+----------------------
+
+- New pages added:
+    landing-page-1.html
+    landing-page-2.html
+    portfolio-grid-creative-1.html
+    portfolio-grid-creative-2.html
+    portfolio-interactive-compact.html
+
+- Fixed: Portfolio grid item video height issue.
+- Fixed: Page header meta issue.
+- Fixed: Classic menu hover issue.
+- Fixed: Portfolio interactive scrolling speed issue.
+- Fixed: Scrolling text container scrolling speed issue.
+- Updated: "GSAP" to the latest version.
+- Updated: "Smooth Scrollbar" to the latest version.
+- Updated: "Swiper" to the latest version.
+- Updated: "Font Awesome" to the latest version.
+- Improved: Changed scroll down circle size a bit.
+- Improved: Minor code improvements.
+- Improved: Page header image.
+- Improved: Page header caption.
+- Improved: Contact page.
+- Improved: Blog post conmment section.
+
+
+
+
+---------------------
+v1.1 - 23 July 2021
+---------------------
+
+- New pages added: 
+
+    - blog-interactive.html
+    - blog-list.html
+    - blog-classic.html
+    - blog-classic-sidebar.html
+    - blog-post.html
+    - blog-post-classic-sidebar.html
+    - blog-archive.html
+
+- Changed: "tt-project-share" is now "ph-share" (renamed all classes).
+- Fixed: Page header video background issue.
+- Fixed: Classic menu hover issue.
+- Improved: Overlay menu.
+
+
+
+
+---------------------
+v1.0 - 17 July 2021
+---------------------
+
+Initial Release.
