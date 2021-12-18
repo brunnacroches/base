@@ -39,13 +39,13 @@
 	</head>
 
 	
-	<!-- ===========
-	///// Body /////
-	================
-* Use a classe "tt-boxed" para habilitar o layout da página em caixa globalmente (afeta todos os elementos que contêm a classe "tt-wrap").
-* Use a classe "tt-smooth-scroll" para habilitar a rolagem suave da página.
-* Use a classe "tt-transição" para habilitar as transições de página.
-* Use a classe "tt-magic-cursor" para habilitar o cursor mágico.
+												<!-- ===========
+												///// Body /////
+												================
+											* Use a classe "tt-boxed" para habilitar o layout da página em caixa globalmente (afeta todos os elementos que contêm a classe "tt-wrap").
+											* Use a classe "tt-smooth-scroll" para habilitar a rolagem suave da página.
+											* Use a classe "tt-transição" para habilitar as transições de página.
+											* Use a classe "tt-magic-cursor" para habilitar o cursor mágico.
 	-->
 	<body id="body" class="tt-transition tt-boxed tt-smooth-scroll tt-magic-cursor">
 
@@ -60,7 +60,9 @@
 				<div class="ptr-overlay"></div>
 				<div class="ptr-preloader">
 					<div class="ptr-prel-content">
-						<!-- Dica: pode ser necessário alterar a altura e opacidade da imagem para corresponder ao tipo de logotipo. Você pode fazer isso a partir do arquivo "theme.css" (encontre: ".ptr-prel-image"). -->
+						<!-- Dica: pode ser necessário alterar a altura e opacidade da imagem para corresponder 
+							ao tipo de logotipo. Você pode fazer isso 
+							a partir do arquivo "theme.css" (encontre: ".ptr-prel-image"). -->
 
 						<!-- CARREGAMENTO DA LOGO -->
 						<img src="assets/img/brunna-light.png" class="ptr-prel-image tt-logo-light" alt="Logo">
@@ -92,7 +94,11 @@
 				* Use a classe "tt-header-fixed" para definir o cabeçalho para a posição fixa.
 				-->
 				<header id="tt-header" class="tt-header-fixed">
-					<div class="tt-header-inner"> <!-- adicione / remova a classe "tt-wrap" para habilitar / desabilitar o layout do elemento em caixa (a classe "tt-boxed" é necessária na tag <body>!). Observação: adicionalmente, você pode usar a classe auxiliar preparada "max-width- *" para adicionar largura personalizada a "tt-wrap". Exemplo: "max-width-1500" (a classe "tt-wrap" ainda é necessária!). Mais informações sobre as classes auxiliares podem ser encontradas no arquivo "helper.css". --->
+					<div class="tt-header-inner"> <!-- adicione / remova a classe "tt-wrap" 
+						para habilitar / desabilitar o layout do elemento em caixa (a classe "tt-boxed" é necessária na tag <body>!). 
+							Observação: adicionalmente, você pode usar a classe auxiliar preparada "max-width- *" para adicionar largura personalizada 
+							a "tt-wrap". Exemplo: "max-width-1500" (a classe "tt-wrap" ainda é necessária!). Mais informações sobre as classes 
+							auxiliares podem ser encontradas no arquivo "helper.css". --->
 
 						<div class="tt-header-col">
 
@@ -100,7 +106,9 @@
 							================ -->
 							<div class="tt-logo"> 
 								<a href="index.html">
-									<!-- Dica: pode ser necessário alterar a altura da imagem para corresponder ao tipo de logotipo. Você pode fazer isso a partir do arquivo "theme.css" (encontre: ".tt-logo img"). -->
+									<!-- Dica: pode ser necessário alterar a altura da imagem para 
+										corresponder ao tipo de logotipo. Você pode fazer isso a partir do 
+										arquivo "theme.css" (encontre: ".tt-logo img"). -->
 
 									<!-- CARREGAMENTO DA LOGO NO CANTO SUPERIOR A ESQUERDA -->
 									<img src="assets/img/brunna-light.png" class="tt-logo-light magnetic-item" alt="Logo"> <!-- BRUNNA light -->
@@ -126,10 +134,10 @@
 							<!-- Botão de alternância para encerrar o menu móvel -->
 
 							<!-- Comece o menu principal (clássico)
-=================================
-* Use a classe "tt-submenu-dark" para habilitar o estilo escuro do submenu.
-* Use a classe "tt-m-menu-center" para alinhar o menu móvel ao centro (sem efeito no desktop!).
-->
+										=================================
+										* Use a classe "tt-submenu-dark" para habilitar o estilo escuro do submenu.
+										* Use a classe "tt-m-menu-center" para alinhar o menu móvel ao centro (sem efeito no desktop!).
+										->
 							-->
 							<nav class="tt-main-menu tt-submenu-dark tt-m-menu-center">
 								<div class="tt-main-menu-holder">
@@ -196,18 +204,23 @@
 
 					
 					<!-- ========================
-///// Início do cabeçalho da página /////
-===============================
-* Use a classe "ph-full" para habilitar o tamanho da tela inteira.
-* Use a classe "ph-cap-sm", "ph-cap-lg", "ph-cap-xlg" ou "ph-cap-xxlg" para definir o tamanho da legenda (sem classe = tamanho padrão).
-* Use a classe "ph-center" para habilitar a posição do centro de conteúdo.
-* Use a classe "ph-bg-image" para habilitar a imagem de fundo do cabeçalho da página (necessária para um único projeto de portfólio!).
-* Use a classe "ph-bg-image-is-light" se necessário, torna os elementos escuros e mais visíveis se você usar uma imagem muito clara (efeito apenas com a classe "ph-bg-image").
-* Use a classe "ph-image-shadow" para habilitar a imagem de fundo do cabeçalho da página (efeito apenas com a classe "ph-bg-image").
-* Use a classe "ph-image-cropped" para cortar a imagem. Ele corrige as dimensões da imagem (sem efeito para "imagem ph-bg"!).
-* Use a classe "ph-image-cover- *" para definir a opacidade da sobreposição de imagem. Por exemplo, "ph-image-cover-2" ou "ph-image-cover-2-5" (até "ph-image-cover-9-5").
-* Use a classe "ph-content-parallax" para habilitar a paralaxe de conteúdo.
-* Use a classe "ph-stroke" para habilitar o estilo do traço do título da legenda.
+									///// Início do cabeçalho da página /////
+									* Use a classe "ph-full" para habilitar o tamanho da tela inteira.
+									* Use a classe "ph-cap-sm", "ph-cap-lg", "ph-cap-xlg" ou "ph-cap-xxlg" 
+									para definir o tamanho da legenda (sem classe = tamanho padrão).
+									* Use a classe "ph-center" para habilitar a posição do centro de conteúdo.
+									* Use a classe "ph-bg-image" para habilitar a imagem de fundo do cabeçalho da página 
+									(necessária para um único projeto de portfólio!).
+									* Use a classe "ph-bg-image-is-light" se necessário, torna os elementos escuros e mais 
+									visíveis se você usar uma imagem muito clara (efeito apenas com a classe "ph-bg-image").
+									* Use a classe "ph-image-shadow" para habilitar a imagem de fundo do cabeçalho da página 
+									(efeito apenas com a classe "ph-bg-image").
+									* Use a classe "ph-image-cropped" para cortar a imagem. Ele corrige as dimensões da imagem 
+									(sem efeito para "imagem ph-bg"!).
+									* Use a classe "ph-image-cover- *" para definir a opacidade da sobreposição de imagem. Por exemplo, 
+									"ph-image-cover-2" ou "ph-image-cover-2-5" (até "ph-image-cover-9-5").
+									* Use a classe "ph-content-parallax" para habilitar a paralaxe de conteúdo.
+									* Use a classe "ph-stroke" para habilitar o estilo do traço do título da legenda.
 					-->
 					<div id="page-header" class="ph-full ph-cap-sm ph-image-cropped ph-image-cover-2 ph-content-parallax">
 						<div class="page-header-inner tt-wrap">
@@ -222,8 +235,9 @@
 							<!-- Imagem do cabeçalho da página final -->
 
 							<!-- Comece a legenda do cabeçalho da página
-=================================
-Use a classe "max-width- *" para definir a largura máxima da legenda, se necessário. Por exemplo, "max-width-1000". Mais informações sobre as classes auxiliares podem ser encontradas no arquivo "helper.css".
+										Use a classe "max-width- *" para definir a largura máxima da legenda, 
+										se necessário. Por exemplo, "max-width-1000". 
+										Mais informações sobre as classes auxiliares podem ser encontradas no arquivo "helper.css".
 							-->
 							<div class="ph-caption">
 								<h1 class="ph-caption-title ph-appear max-width-1000">Hello stranger!</h1>
@@ -238,7 +252,8 @@ Use a classe "max-width- *" para definir a largura máxima da legenda, se necess
 
 						</div> <!-- /.page-header-inner -->
 
-						<!-- Comece o círculo de rolagem para baixo (você pode alterar o "deslocamento de dados" para definir o deslocamento superior da rolagem)
+						<!-- Comece o círculo de rolagem para baixo (você pode alterar o 
+							"deslocamento de dados" para definir o deslocamento superior da rolagem)
 						============================== -->
 						<a href="#page-content" class="scroll-down-circle" data-offset="30">
 							<div class="sdc-inner ph-appear">
@@ -275,19 +290,24 @@ Use a classe "max-width- *" para definir a largura máxima da legenda, se necess
 					<div id="page-content">
 
 						<!-- =========================
-///// Begin tt-section /////
-==============================
-* Você pode usar classes de preenchimento, se necessário. Por exemplo, "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom" etc. Observe que cada situação pode ser diferente e cada seção pode precisar de aulas diferentes de acordo com suas necessidades. Mais informações sobre as classes auxiliares podem ser encontradas no arquivo "helper.css".
+										///// Begin tt-section /////
+										* Você pode usar classes de preenchimento, se necessário. 
+										Por exemplo, "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", 
+										"no-padding-bottom" etc. Observe que cada situação pode ser diferente 
+										e cada seção pode precisar de aulas diferentes de acordo com suas necessidades. 
+										Mais informações sobre as classes auxiliares podem ser encontradas no arquivo "helper.css".
 						-->
 						<div class="tt-section no-padding-bottom">
 							<div class="tt-section-inner">
 
-								<!-- Comece tt-Heading
-========================
-* Use a classe "tt-header-xsm", "tt-header-sm", "tt-header-lg", "tt-header-xlg" ou "tt-header-xxlg" para definir o tamanho da legenda (sem classe = tamanho padrão).
-* Use a classe "tt-header-stroke" para habilitar o estilo do traço.
-* Use a classe "tt-header-center" para alinhar tt-Heading ao centro.
-* Use a classe auxiliar preparada "max-width- *" para adicionar largura personalizada, se necessário. Exemplo: "max-width-800". Mais informações sobre as classes auxiliares podem ser encontradas no arquivo "helper.css".
+											<!-- Comece tt-Heading
+													* Use a classe "tt-header-xsm", "tt-header-sm", "tt-header-lg", 
+													"tt-header-xlg" ou "tt-header-xxlg" para definir o tamanho da legenda (sem classe = tamanho padrão).
+													* Use a classe "tt-header-stroke" para habilitar o estilo do traço.
+													* Use a classe "tt-header-center" para alinhar tt-Heading ao centro.
+													* Use a classe auxiliar preparada "max-width- *" para adicionar largura personalizada, 
+													se necessário. Exemplo: "max-width-800". Mais informações sobre as classes auxiliares 
+													podem ser encontradas no arquivo "helper.css".
 								-->
 								<div class="tt-heading tt-heading-lg tt-heading-center margin-bottom-10-p anim-fadeinup">
 									<h3 class="tt-heading-subtitle text-gray">Latest Projects</h3>
@@ -299,24 +319,30 @@ Use a classe "max-width- *" para definir a largura máxima da legenda, se necess
 								<!-- End tt-Heading -->
 
 
-								<!-- Comece a grade de portfólio (funciona em combinação com tt-Ggrid!)
-============================
-* Use a classe "pgi-hover" para habilitar o efeito de foco do item da grade do portfólio (o comportamento depende das classes "ttgr-gap- *" abaixo!).
-* Use a classe "pgi-cap-hover" para habilitar o efeito de flutuação da legenda do item de grade do portfólio (efeito apenas com a classe "pgi-cap-inside"! Também não tem efeito em dispositivos móveis!).
-* Use a classe "pgi-cap-center" para posicionar a legenda do item da grade do portfólio no centro.
-* Use a classe "pgi-cap-inside" para posicionar a legenda do item da grade do portfólio para dentro.
+									<!-- Comece a grade de portfólio (funciona em combinação com tt-Ggrid!)
+									* Use a classe "pgi-hover" para habilitar o efeito de foco do item da grade do portfólio 
+									(o comportamento depende das classes "ttgr-gap- *" abaixo!).
+									* Use a classe "pgi-cap-hover" para habilitar o efeito de flutuação da legenda do item de grade do portfólio 
+									(efeito apenas com a classe "pgi-cap-inside"! Também não tem efeito em dispositivos móveis!).
+									* Use a classe "pgi-cap-center" para posicionar a legenda do item da grade do portfólio no centro.
+									* Use a classe "pgi-cap-inside" para posicionar a legenda do item da grade do portfólio para dentro.
 								--> 
 								<div id="portfolio-grid" class="pgi-cap-inside pgi-hover">
 
 									<!-- Comece tt-Grid
-=====================
-* Use a classe "ttgr-layout-2", "ttgr-layout-3", "ttgr-layout-4" para definir o layout da grade (colunas). Sem classe = uma coluna.
-* Use a classe "ttgr-layout-1-2", "ttgr-layout-2-1", "ttgr-layout-2-3", "ttgr-layout-3-2", "ttgr-layout-3- 4 "ou" ttgr-layout-4-3 "para definir o layout de grade mista (colunas).
-* Use a classe "ttgr-layout-creative-1" ou "ttgr-layout-creative-2" para definir o layout misto do criativo da grade (sem efeito com as classes "ttgr-portrait", "ttgr-portrait-half", "ttgr- not-cropped "e" ttgr-shifted ").
-* Use a classe "ttgr-portrait" ou "ttgr-portrait-half" para habilitar o modo retrato (sem efeito com as classes "ttgr-layout-creative-1", "ttgr-layout-creative-2" e "ttgr-not- cortada ").
-* Use a classe "ttgr-gap-1", "ttgr-gap-2", "ttgr-gap-3", "ttgr-gap-4", "ttgr-gap-5" ou "ttgr-gap-6" para adicionar espaço entre os itens.
-* Use a classe "ttgr-not-cropped" para habilitar o modo não cortado (efeito apenas com as classes "ttgr-layout-2", "ttgr-layout-3" e "ttgr-layout-4").
-* Use a classe "ttgr-shifted" para habilitar o layout alterado (efeito apenas com as classes "ttgr-layout-2", "ttgr-layout-3" e "ttgr-layout-4").
+									* Use a classe "ttgr-layout-2", "ttgr-layout-3", "ttgr-layout-4" para definir o layout da grade (colunas). Sem classe = uma coluna.
+									* Use a classe "ttgr-layout-1-2", "ttgr-layout-2-1", "ttgr-layout-2-3", "ttgr-layout-3-2", "ttgr-layout-3- 4 "ou" 
+									ttgr-layout-4-3 "para definir o layout de grade mista (colunas).
+									* Use a classe "ttgr-layout-creative-1" ou "ttgr-layout-creative-2" para definir o layout misto do criativo da grade 
+									(sem efeito com as classes "ttgr-portrait", "ttgr-portrait-half", "ttgr- not-cropped "e" ttgr-shifted ").
+									* Use a classe "ttgr-portrait" ou "ttgr-portrait-half" para habilitar o modo retrato (sem efeito com as classes 
+									"ttgr-layout-creative-1", "ttgr-layout-creative-2" e "ttgr-not- cortada ").
+									* Use a classe "ttgr-gap-1", "ttgr-gap-2", "ttgr-gap-3", "ttgr-gap-4", "ttgr-gap-5" ou "ttgr-gap-6" para adicionar 
+									espaço entre os itens.
+									* Use a classe "ttgr-not-cropped" para habilitar o modo não cortado (efeito apenas com as classes "ttgr-layout-2", 
+									"ttgr-layout-3" e "ttgr-layout-4").
+									* Use a classe "ttgr-shifted" para habilitar o layout alterado (efeito apenas com as classes "ttgr-layout-2", 
+									"ttgr-layout-3" e "ttgr-layout-4").
 									-->
 									<div class="tt-grid ttgr-layout-creative-2 ttgr-not-cropped ttgr-gap-4">
 
@@ -367,13 +393,16 @@ Use a classe "max-width- *" para definir a largura máxima da legenda, se necess
 												<div class="ttgr-item-inner">
 
 													<!-- 
-Comece o item de grade do portfólio
-=================================
-* Use a classe "pgi-image-is-light" se necessário, torna a legenda mais visível se você usar imagem clara (efeito somente se "pgi-cap-inside" estiver habilitado em "portfolio-grid"!).
+													Comece o item de grade do portfólio
+													* Use a classe "pgi-image-is-light" se necessário, torna a legenda mais visível 
+													se você usar imagem clara (efeito somente se "pgi-cap-inside" estiver habilitado em "portfolio-grid"!).
 													-->
 													<div class="portfolio-grid-item anim-parallax">
 														<a href="single-project-2.html" class="pgi-image-wrap" data-cursor="View<br>Project">
-															<!-- Use a classe "cover-opacity- *" para definir a sobreposição de imagem, se necessário. Por exemplo, "cobertura-opacidade-2". Útil se a classe "pgi-cap-inside" estiver habilitada na "grade do portfólio". Nota: é individual e depende da imagem que você usa. Mais informações sobre classes auxiliares no arquivo "helper.css".-->
+															<!-- Use a classe "cover-opacity- *" para definir a sobreposição de imagem, 
+																se necessário. Por exemplo, "cobertura-opacidade-2". Útil se a classe "pgi-cap-inside" 
+																estiver habilitada na "grade do portfólio". Nota: é individual e depende da imagem que você usa. 
+																Mais informações sobre classes auxiliares no arquivo "helper.css".-->
 															<div class="pgi-image-holder cover-opacity-2">
 																<div class="pgi-image-inner anim-zoomin">
 																	<figure class="pgi-image ttgr-height">
@@ -405,8 +434,9 @@ Comece o item de grade do portfólio
 												<div class="ttgr-item-inner">
 
 													<!-- Comece o item de grade do portfólio
-=================================
-* Use a classe "pgi-image-is-light" se necessário, torna a legenda mais visível se você usar imagem clara (efeito somente se "pgi-cap-inside" estiver habilitado em "portfolio-grid"!).
+														* Use a classe "pgi-image-is-light" se necessário, torna a legenda 
+														mais visível se você usar imagem clara (efeito somente se "pgi-cap-inside" 
+														estiver habilitado em "portfolio-grid"!).
 													-->
 													<div class="portfolio-grid-item">
 														<a href="single-project-3.html" class="pgi-image-wrap" data-cursor="View<br>Project">
@@ -444,14 +474,18 @@ Comece o item de grade do portfólio
 											<div class="tt-grid-item isotope-item nature">
 												<div class="ttgr-item-inner">
 
-													<!-- Comece o item de grade do portfólio
-=================================
-* Use a classe "pgi-image-is-light" se necessário, torna a legenda mais visível se você usar imagem clara (efeito somente se "pgi-cap-inside" estiver habilitado em "portfolio-grid"!).
-													-->
+														<!-- Comece o item de grade do portfólio
+														* Use a classe "pgi-image-is-light" se necessário, torna a legenda mais visível se você usar imagem 
+														clara (efeito somente se "pgi-cap-inside" estiver habilitado em "portfolio-grid"!).
+																											-->
 													<div class="portfolio-grid-item">
 														<a href="single-project-4.html" class="pgi-image-wrap" data-cursor="View<br>Project">
-															<!-- 
-Use a classe "cover-opacity- *" para definir a sobreposição de imagem, se necessário. Por exemplo, "cobertura-opacidade-2". Útil se a classe "pgi-cap-inside" estiver habilitada na "grade do portfólio". Nota: é individual e depende da imagem que você usa. Mais informações sobre classes auxiliares no arquivo "helper.css". -->
+																<!-- 
+																		Use a classe "cover-opacity- *" para definir a sobreposição de imagem, se necessário. 
+																		Por exemplo, "cobertura-opacidade-2". Útil se a classe "pgi-cap-inside" estiver habilitada na 
+																		"grade do portfólio". 
+																		Nota: é individual e depende da imagem que você usa. Mais informações sobre classes auxiliares 
+																		no arquivo "helper.css". -->
 															<div class="pgi-image-holder cover-opacity-2">
 																<div class="pgi-image-inner anim-zoomin">
 																	<figure class="pgi-image ttgr-height">
@@ -492,20 +526,20 @@ Use a classe "cover-opacity- *" para definir a sobreposição de imagem, se nece
 
 
 						<!-- 
-=========================
-///// Begin tt-section /////
-==============================
-* Você pode usar classes de preenchimento, se necessário. Por exemplo, "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom" etc. Observe que cada situação pode ser diferente e cada seção pode precisar de aulas diferentes de acordo com suas necessidades. Mais informações sobre as classes auxiliares podem ser encontradas no arquivo "helper.css".
+								=========================
+								///// Begin tt-section /////
+								==============================
+								* Você pode usar classes de preenchimento, se necessário. Por exemplo, "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom" etc. Observe que cada situação pode ser diferente e cada seção pode precisar de aulas diferentes de acordo com suas necessidades. Mais informações sobre as classes auxiliares podem ser encontradas no arquivo "helper.css".
 						-->
 						<div class="tt-section padding-bottom-xlg-150 padding-left-sm-3-p padding-right-sm-3-p">
 							<div class="tt-section-inner tt-wrap max-width-1100">
 
 								<!-- Comece tt-Heading
-========================
-* Use a classe "tt-header-xsm", "tt-header-sm", "tt-header-lg", "tt-header-xlg" ou "tt-header-xxlg" para definir o tamanho da legenda (sem classe = tamanho padrão).
-* Use a classe "tt-header-stroke" para habilitar o estilo do traço.
-* Use a classe "tt-header-center" para alinhar tt-Heading ao centro.
-* Use a classe auxiliar preparada "max-width- *" para adicionar largura personalizada, se necessário. Exemplo: "max-width-800". Mais informações sobre as classes auxiliares podem ser encontradas no arquivo "helper.css".
+								========================
+								* Use a classe "tt-header-xsm", "tt-header-sm", "tt-header-lg", "tt-header-xlg" ou "tt-header-xxlg" para definir o tamanho da legenda (sem classe = tamanho padrão).
+								* Use a classe "tt-header-stroke" para habilitar o estilo do traço.
+								* Use a classe "tt-header-center" para alinhar tt-Heading ao centro.
+								* Use a classe auxiliar preparada "max-width- *" para adicionar largura personalizada, se necessário. Exemplo: "max-width-800". Mais informações sobre as classes auxiliares podem ser encontradas no arquivo "helper.css".
 								-->
 								<div class="tt-heading tt-heading-lg tt-heading-center margin-bottom-15-p anim-fadeinup">
 									<h3 class="tt-heading-subtitle text-gray">What We Do</h3>
@@ -608,11 +642,11 @@ Use a classe "cover-opacity- *" para definir a sobreposição de imagem, se nece
 						<!-- End tt-section -->
 
 
-						<!-- 
-=========================
-///// Begin tt-section /////
-==============================
-* Você pode usar classes de preenchimento, se necessário. Por exemplo, "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom" etc. Observe que cada situação pode ser diferente e cada seção pode precisar de aulas diferentes de acordo com suas necessidades. Mais informações sobre as classes auxiliares podem ser encontradas no arquivo "helper.css".
+																			<!-- 
+													=========================
+													///// Begin tt-section /////
+													==============================
+													* Você pode usar classes de preenchimento, se necessário. Por exemplo, "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom" etc. Observe que cada situação pode ser diferente e cada seção pode precisar de aulas diferentes de acordo com suas necessidades. Mais informações sobre as classes auxiliares podem ser encontradas no arquivo "helper.css".
 						-->
 						<div class="tt-section padding-top-xlg-150 padding-bottom-xlg-100 padding-left-sm-3-p padding-right-sm-3-p bg-white-accent-3">
 							<div class="tt-section-inner">
