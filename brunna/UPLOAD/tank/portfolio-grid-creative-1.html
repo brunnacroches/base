@@ -201,18 +201,18 @@
 
 					
 					<!-- ========================
-///// Início do cabeçalho da página /////
-===============================
-* Use a classe "ph-full" para habilitar o tamanho da tela inteira.
-* Use a classe "ph-cap-sm", "ph-cap-lg", "ph-cap-xlg" ou "ph-cap-xxlg" para definir o tamanho da legenda (sem classe = tamanho padrão).
-* Use a classe "ph-center" para habilitar a posição do centro de conteúdo.
-* Use a classe "ph-bg-image" para habilitar a imagem de fundo do cabeçalho da página (necessária para um único projeto de portfólio!).
-* Use a classe "ph-bg-image-is-light" se necessário, torna os elementos escuros e mais visíveis se você usar uma imagem muito clara (efeito apenas com a classe "ph-bg-image").
-* Use a classe "ph-image-shadow" para habilitar a imagem de fundo do cabeçalho da página (efeito apenas com a classe "ph-bg-image").
-* Use a classe "ph-image-cropped" para cortar a imagem. Ele corrige as dimensões da imagem (sem efeito para "imagem ph-bg"!).
-* Use a classe "ph-image-cover- *" para definir a opacidade da sobreposição de imagem. Por exemplo, "ph-image-cover-2" ou "ph-image-cover-2-5" (até "ph-image-cover-9-5").
-* Use a classe "ph-content-parallax" para habilitar a paralaxe de conteúdo.
-* Use a classe "ph-stroke" para habilitar o estilo do traço do título da legenda.
+										///// Início do cabeçalho da página /////
+										===============================
+										* Use a classe "ph-full" para habilitar o tamanho da tela inteira.
+										* Use a classe "ph-cap-sm", "ph-cap-lg", "ph-cap-xlg" ou "ph-cap-xxlg" para definir o tamanho da legenda (sem classe = tamanho padrão).
+										* Use a classe "ph-center" para habilitar a posição do centro de conteúdo.
+										* Use a classe "ph-bg-image" para habilitar a imagem de fundo do cabeçalho da página (necessária para um único projeto de portfólio!).
+										* Use a classe "ph-bg-image-is-light" se necessário, torna os elementos escuros e mais visíveis se você usar uma imagem muito clara (efeito apenas com a classe "ph-bg-image").
+										* Use a classe "ph-image-shadow" para habilitar a imagem de fundo do cabeçalho da página (efeito apenas com a classe "ph-bg-image").
+										* Use a classe "ph-image-cropped" para cortar a imagem. Ele corrige as dimensões da imagem (sem efeito para "imagem ph-bg"!).
+										* Use a classe "ph-image-cover- *" para definir a opacidade da sobreposição de imagem. Por exemplo, "ph-image-cover-2" ou "ph-image-cover-2-5" (até "ph-image-cover-9-5").
+										* Use a classe "ph-content-parallax" para habilitar a paralaxe de conteúdo.
+										* Use a classe "ph-stroke" para habilitar o estilo do traço do título da legenda.
 					-->
 					<div id="page-header" class="ph-full ph-cap-xxlg ph-center ph-image-cropped ph-image-cover-2 ph-content-parallax">
 						<div class="page-header-inner tt-wrap">
@@ -227,8 +227,8 @@
 							<!-- End page header image -->
 
 							<!-- Begin page header caption
-							=============================== 
-							Use class "max-width-*" to set caption max width if needed. For example "max-width-1000". More info about helper classes can be found in the file "helper.css".
+												=============================== 
+												Use class "max-width-*" to set caption max width if needed. For example "max-width-1000". More info about helper classes can be found in the file "helper.css".
 							-->
 							<div class="ph-caption">
 								<h1 class="ph-caption-title ph-appear">Portfolio</h1>
@@ -255,7 +255,6 @@
 							</div> <!-- /.sdc-inner -->
 						</a>
 						<!-- End scroll down circle -->
-
 						<!-- Begin made with love 
 						========================== -->
 						<div class="made-with-love ph-appear">
@@ -273,13 +272,22 @@
 					<!-- *************************************
 					*********** Begin page content *********** 
 					************************************** -->
-					<div id="page-content">
 
 						<!-- =======================
 						///// Begin tt-section /////
 						============================ 
 						* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
 						-->
+						<div id="page-content">
+	
+									<!-- Begin portfolio interactive 
+									=================================
+									* Use class "pi-compact" to enable compact style.
+									* Use class "pi-borders" to enable borders.
+									* Use class "pi-stroke" to enable title stroke style.
+									* Use class "pi-force-scroll" to also force shorter hover titles to scroll. Note: If "pi-item-title" text is wider than "pi-item-title-link" then hover title scrolls by default (the longer the text, the faster it scrolls). You may need to adjust the "data-scroll-speed" attribute on each item separately to find a suitable speed. No effect on mobile devices!
+									-->
+									
 						<div class="tt-section no-padding-bottom">
 							<div class="tt-section-inner">
 
@@ -336,11 +344,19 @@
 															<div class="ttgr-cat-list-content">
 																<ul class="ttgr-cat-list">
 																	<li class="ttgr-cat-close">Close <i class="fas fa-times"></i></li> <!-- For mobile devices! -->
-																	<li class="ttgr-cat-item"><a href="#" class="active">Show All</a></li>
-																	<li class="ttgr-cat-item"><a href="#" data-filter=".branding">Branding</a></li>
-																	<li class="ttgr-cat-item"><a href="#" data-filter=".people">People</a></li>
-																	<li class="ttgr-cat-item"><a href="#" data-filter=".nature">Nature</a></li>
-																	<li class="ttgr-cat-item"><a href="#" data-filter=".creative">Creative</a></li>
+																	<li class="ttgr-cat-item">
+																		<a href="#" class="active">Show All</a>
+																	</li>
+																	<li class="ttgr-cat-item">
+																		<a href="#" data-filter=".branding">JavaScript</a>
+																	</li>
+																	<li class="ttgr-cat-item">
+																		<a href="#" data-filter=".people">Python</a>
+																	</li>
+																	<li class="ttgr-cat-item"><a href="#" data-filter=".nature">Node.js</a></li>
+																	<li class="ttgr-cat-item"><a href="#" data-filter=".creative">Three.js</a></li>
+																	<li class="ttgr-cat-item"><a href="#" data-filter=".creative">Bootstrap</a>
+																	</li>
 																</ul>
 															</div> <!-- /.ttgr-cat-links-content -->
 														</div> <!-- /.ttgr-cat-links-inner -->
@@ -353,9 +369,53 @@
 
 										</div>
 										<!-- End tt-Grid top content -->
-
-
-										<!-- Begin tt-Grid items wrap 
+										<nav class="tt-main-menu tt-submenu-dark tt-m-menu-center">
+											<div class="tt-main-menu-holder">
+												<div class="tt-main-menu-inner">
+													<div class="tt-main-menu-content">
+			
+										<!-- COMEÇO main menu list -->
+										<!-- Begin main menu list -->
+														<ul class="tt-main-menu-list">
+			
+										<!-- <li><a href="">Single Link</a></li> -->
+			
+										<!-- Begin submenu (submenu master) -->
+															<li class="tt-submenu-wrap tt-submenu-master">
+																	<a href="index.html">All</a>
+															</li>
+										<!-- End submenu (sub-master) -->
+			
+										<!-- Begin submenu (submenu master) -->
+															<li class="tt-submenu-wrap tt-submenu-master active">
+																	<a href="portfolio-grid-creative-1.html">JavaScript</a>
+															</li>
+										<!-- End submenu (sub-master) -->
+			
+										<!-- Begin submenu (submenu master) -->
+															<li class="tt-submenu-wrap tt-submenu-master">
+																	<a href="about-me.html">Node.js</a>
+															</li>
+										<!-- End submenu (sub-master) -->
+			
+										<!-- Begin submenu (submenu master) -->
+															<li class="tt-submenu-wrap tt-submenu-master">
+																	<a href="blog-list.html">Bootsrap</a>
+															</li>
+										<!-- End submenu (sub-master) -->
+			
+															<li><a href="contact.html">Contact</a></li>
+														</ul>
+			
+										<!-- End main menu list -->
+										<!-- FIM main menu list -->
+			
+													</div> <!-- /.tt-main-menu-content -->
+												</div> <!-- /.tt-main-menu-inner -->
+											</div> <!-- /.tt-main-menu-holder -->
+			
+										</nav>
+																				<!-- Begin tt-Grid items wrap 
 										============================== -->
 										<div class="tt-grid-items-wrap isotope-items-wrap">
 
@@ -392,6 +452,361 @@
 													</div>
 													<!-- End portfolio grid item -->
 
+												</div> <!-- /.ttgr-item-inner -->
+											</div>
+											<!-- End tt-Grid item -->
+
+											<!-- Begin tt-Grid item
+											======================== -->
+											<div class="tt-grid-item isotope-item creative">
+												<div class="ttgr-item-inner">
+
+													<!-- Begin portfolio grid item 
+													===============================
+													* Use class "pgi-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pgi-cap-inside" is enabled on "portfolio-grid"!).
+													-->
+													<div class="portfolio-grid-item">
+														<a href="single-project-2.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+															<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pgi-cap-inside" is enabled on "portfolio-grid". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
+															<div class="pgi-image-holder cover-opacity-2">
+																<div class="pgi-image-inner anim-zoomin">
+																	<figure class="pgi-image ttgr-height">
+																		<img src="assets/img/portfolio/portfolio-2.jpg" alt="image">
+																	</figure> <!-- /.pgi-image -->
+																</div> <!-- /.pgi-image-inner -->
+															</div> <!-- /.pgi-image-holder -->
+														</a> <!-- /.pgi-image-wrap -->
+
+														<div class="pgi-caption">
+															<div class="pgi-caption-inner">
+																<h2 class="pgi-title">Smithy</h2>
+																<div class="pgi-categories-wrap">
+																	<div class="pgi-category">Creative</div>
+																	<!-- <div class="pgi-category">Varia</div> -->
+																</div> <!-- /.pli-categories-wrap -->
+															</div> <!-- /.pgi-caption-inner -->
+														</div> <!-- /.pgi-caption -->
+													</div>
+													<!-- End portfolio grid item -->
+
+												</div> <!-- /.ttgr-item-inner -->
+											</div>
+											<!-- End tt-Grid item -->
+
+											<!-- Begin tt-Grid item
+											======================== -->
+											<div class="tt-grid-item isotope-item people">
+												<div class="ttgr-item-inner">
+
+													<!-- Begin portfolio grid item 
+													===============================
+													* Use class "pgi-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pgi-cap-inside" is enabled on "portfolio-grid"!).
+													-->
+													<div class="portfolio-grid-item">
+														<a href="single-project-3.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+															<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pgi-cap-inside" is enabled on "portfolio-grid". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
+															<div class="pgi-image-holder cover-opacity-2">
+																<div class="pgi-image-inner anim-zoomin">
+																	<figure class="pgi-video-wrap ttgr-height">
+																		<video class="pgi-video" loop muted preload="metadata" poster="assets/vids/fashion-week.jpg">
+																			<source src="assets/vids/fashion-week.mp4" type="video/mp4">
+																			<source src="assets/vids/fashion-week.webm" type="video/webm">
+																		</video>
+																	</figure> <!-- /.pgi-video-wrap -->
+																</div> <!-- /.pgi-image-inner -->
+															</div> <!-- /.pgi-image-holder -->
+														</a> <!-- /.pgi-image-wrap -->
+
+														<div class="pgi-caption">
+															<div class="pgi-caption-inner">
+																<h2 class="pgi-title">Washion Week</h2>
+																<div class="pgi-categories-wrap">
+																	<div class="pgi-category">People</div>
+																	<!-- <div class="pgi-category">Varia</div> -->
+																</div> <!-- /.pli-categories-wrap -->
+															</div> <!-- /.pgi-caption-inner -->
+														</div> <!-- /.pgi-caption -->
+													</div>
+													<!-- End portfolio grid item -->
+
+												</div> <!-- /.ttgr-item-inner -->
+											</div>
+											<!-- End tt-Grid item -->
+
+											<!-- Begin tt-Grid item
+											======================== -->
+											<div class="tt-grid-item isotope-item nature">
+												<div class="ttgr-item-inner">
+
+													<!-- Begin portfolio grid item 
+													===============================
+													* Use class "pgi-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pgi-cap-inside" is enabled on "portfolio-grid"!).
+													-->
+													<div class="portfolio-grid-item">
+														<a href="single-project-4.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+															<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pgi-cap-inside" is enabled on "portfolio-grid". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
+															<div class="pgi-image-holder cover-opacity-2">
+																<div class="pgi-image-inner anim-zoomin">
+																	<figure class="pgi-image ttgr-height">
+																		<img src="assets/img/portfolio/portfolio-3.jpg" alt="image">
+																	</figure> <!-- /.pgi-image -->
+																</div> <!-- /.pgi-image-inner -->
+															</div> <!-- /.pgi-image-holder -->
+														</a> <!-- /.pgi-image-wrap -->
+
+														<div class="pgi-caption">
+															<div class="pgi-caption-inner">
+																<h2 class="pgi-title">Mystery Forest</h2>
+																<div class="pgi-categories-wrap">
+																	<div class="pgi-category">Nature</div>
+																	<!-- <div class="pgi-category">Varia</div> -->
+																</div> <!-- /.pli-categories-wrap -->
+															</div> <!-- /.pgi-caption-inner -->
+														</div> <!-- /.pgi-caption -->
+													</div>
+													<!-- End portfolio grid item -->
+
+												</div> <!-- /.ttgr-item-inner -->
+											</div>
+											<!-- End tt-Grid item -->
+
+											<!-- Begin tt-Grid item
+											======================== -->
+											<div class="tt-grid-item isotope-item branding">
+												<div class="ttgr-item-inner">
+
+													<!-- Begin portfolio grid item 
+													===============================
+													* Use class "pgi-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pgi-cap-inside" is enabled on "portfolio-grid"!).
+													-->
+													<div class="portfolio-grid-item">
+														<a href="single-project-5.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+															<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pgi-cap-inside" is enabled on "portfolio-grid". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
+															<div class="pgi-image-holder cover-opacity-2">
+																<div class="pgi-image-inner anim-zoomin">
+																	<figure class="pgi-image ttgr-height">
+																		<img src="assets/img/portfolio/portfolio-4.jpg" alt="image">
+																	</figure> <!-- /.pgi-image -->
+																</div> <!-- /.pgi-image-inner -->
+															</div> <!-- /.pgi-image-holder -->
+														</a> <!-- /.pgi-image-wrap -->
+
+														<div class="pgi-caption">
+															<div class="pgi-caption-inner">
+																<h2 class="pgi-title">Red Package</h2>
+																<div class="pgi-categories-wrap">
+																	<div class="pgi-category">Branding</div>
+																	<!-- <div class="pgi-category">Varia</div> -->
+																</div> <!-- /.pli-categories-wrap -->
+															</div> <!-- /.pgi-caption-inner -->
+														</div> <!-- /.pgi-caption -->
+													</div>
+													<!-- End portfolio grid item -->
+
+												</div> <!-- /.ttgr-item-inner -->
+											</div>
+											<!-- End tt-Grid item -->
+
+											<!-- Begin tt-Grid item
+											======================== -->
+											<div class="tt-grid-item isotope-item people">
+												<div class="ttgr-item-inner">
+
+													<!-- Begin portfolio grid item 
+													===============================
+													* Use class "pgi-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pgi-cap-inside" is enabled on "portfolio-grid"!).
+													-->
+													<div class="portfolio-grid-item">
+														<a href="single-project-6.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+															<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pgi-cap-inside" is enabled on "portfolio-grid". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
+															<div class="pgi-image-holder cover-opacity-2">
+																<div class="pgi-image-inner anim-zoomin">
+																	<figure class="pgi-image ttgr-height">
+																		<img src="assets/img/portfolio/portfolio-5.jpg" alt="image">
+																	</figure> <!-- /.pgi-image -->
+																</div> <!-- /.pgi-image-inner -->
+															</div> <!-- /.pgi-image-holder -->
+														</a> <!-- /.pgi-image-wrap -->
+
+														<div class="pgi-caption">
+															<div class="pgi-caption-inner">
+																<h2 class="pgi-title">Studio Shoot</h2>
+																<div class="pgi-categories-wrap">
+																	<div class="pgi-category">People</div>
+																	<!-- <div class="pgi-category">Varia</div> -->
+																</div> <!-- /.pli-categories-wrap -->
+															</div> <!-- /.pgi-caption-inner -->
+														</div> <!-- /.pgi-caption -->
+													</div>
+													<!-- End portfolio grid item -->
+
+												</div> <!-- /.ttgr-item-inner -->
+											</div>
+											<!-- End tt-Grid item -->
+
+											<!-- Begin tt-Grid item
+											======================== -->
+											<div class="tt-grid-item isotope-item nature">
+												<div class="ttgr-item-inner">
+
+													<!-- Begin portfolio grid item 
+													===============================
+													* Use class "pgi-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pgi-cap-inside" is enabled on "portfolio-grid"!).
+													-->
+													<div class="portfolio-grid-item">
+														<a href="single-project-7.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+															<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pgi-cap-inside" is enabled on "portfolio-grid". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
+															<div class="pgi-image-holder cover-opacity-2">
+																<div class="pgi-image-inner anim-zoomin">
+																	<figure class="pgi-image ttgr-height">
+																		<img src="assets/img/portfolio/portfolio-6.jpg" alt="image">
+																	</figure> <!-- /.pgi-image -->
+																</div> <!-- /.pgi-image-inner -->
+															</div> <!-- /.pgi-image-holder -->
+														</a> <!-- /.pgi-image-wrap -->
+
+														<div class="pgi-caption">
+															<div class="pgi-caption-inner">
+																<h2 class="pgi-title">Breaking Wave</h2>
+																<div class="pgi-categories-wrap">
+																	<div class="pgi-category">Nature</div>
+																	<!-- <div class="pgi-category">Varia</div> -->
+																</div> <!-- /.pli-categories-wrap -->
+															</div> <!-- /.pgi-caption-inner -->
+														</div> <!-- /.pgi-caption -->
+													</div>
+													<!-- End portfolio grid item -->
+
+												</div> <!-- /.ttgr-item-inner -->
+											</div>
+											<!-- End tt-Grid item -->
+
+											<!-- Begin tt-Grid item
+											======================== -->
+											<div class="tt-grid-item isotope-item branding">
+												<div class="ttgr-item-inner">
+
+													<!-- Begin portfolio grid item 
+													===============================
+													* Use class "pgi-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pgi-cap-inside" is enabled on "portfolio-grid"!).
+													-->
+													<div class="portfolio-grid-item pgi-image-is-light">
+														<a href="single-project-8.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+															<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pgi-cap-inside" is enabled on "portfolio-grid". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
+															<div class="pgi-image-holder cover-opacity-2">
+																<div class="pgi-image-inner anim-zoomin">
+																	<figure class="pgi-image ttgr-height">
+																		<img src="assets/img/portfolio/portfolio-7.jpg" alt="image">
+																	</figure> <!-- /.pgi-image -->
+																</div> <!-- /.pgi-image-inner -->
+															</div> <!-- /.pgi-image-holder -->
+														</a> <!-- /.pgi-image-wrap -->
+
+														<div class="pgi-caption">
+															<div class="pgi-caption-inner">
+																<h2 class="pgi-title">Wall Lamp</h2>
+																<div class="pgi-categories-wrap">
+																	<div class="pgi-category">Branding</div>
+																	<!-- <div class="pgi-category">Varia</div> -->
+																</div> <!-- /.pli-categories-wrap -->
+															</div> <!-- /.pgi-caption-inner -->
+														</div> <!-- /.pgi-caption -->
+													</div>
+													<!-- End portfolio grid item -->
+
+												</div> <!-- /.ttgr-item-inner -->
+											</div>
+											<!-- End tt-Grid item -->
+
+											<!-- Begin tt-Grid item
+											======================== -->
+											<div class="tt-grid-item isotope-item creative">
+												<div class="ttgr-item-inner">
+
+													<!-- Begin portfolio grid item 
+													===============================
+													* Use class "pgi-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pgi-cap-inside" is enabled on "portfolio-grid"!).
+													-->
+													<div class="portfolio-grid-item">
+														<a href="single-project-9.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+															<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pgi-cap-inside" is enabled on "portfolio-grid". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
+															<div class="pgi-image-holder cover-opacity-2">
+																<div class="pgi-image-inner anim-zoomin">
+																	<figure class="pgi-image ttgr-height">
+																		<img src="assets/img/portfolio/portfolio-8.jpg" alt="image">
+																	</figure> <!-- /.pgi-image -->
+																</div> <!-- /.pgi-image-inner -->
+															</div> <!-- /.pgi-image-holder -->
+														</a> <!-- /.pgi-image-wrap -->
+
+														<div class="pgi-caption">
+															<div class="pgi-caption-inner">
+																<h2 class="pgi-title">Elegant Stoves</h2>
+																<div class="pgi-categories-wrap">
+																	<div class="pgi-category">Creative</div>
+																	<!-- <div class="pgi-category">Varia</div> -->
+																</div> <!-- /.pli-categories-wrap -->
+															</div> <!-- /.pgi-caption-inner -->
+														</div> <!-- /.pgi-caption -->
+													</div>
+													<!-- End portfolio grid item -->
+
+												</div> <!-- /.ttgr-item-inner -->
+											</div>
+											<!-- End tt-Grid item -->
+
+										</div>
+										<!-- End tt-Grid items wrap  -->
+										
+											<div class="tt-grid-item isotope-item people">
+												<div class="ttgr-item-inner">
+
+													<nav class="tt-main-menu tt-submenu-dark tt-m-menu-center">
+														<div class="tt-main-menu-holder">
+															<div class="tt-main-menu-inner">
+																<div class="tt-main-menu-content">
+						
+													<!-- COMEÇO main menu list -->
+													<!-- Begin main menu list -->
+																	<ul class="tt-main-menu-list">
+						
+													<!-- <li><a href="">Single Link</a></li> -->
+						
+													<!-- Begin submenu (submenu master) -->
+																		<li class="tt-submenu-wrap tt-submenu-master">
+																				<a href="index.html">All</a>
+																		</li>
+													<!-- End submenu (sub-master) -->
+						
+													<!-- Begin submenu (submenu master) -->
+																		<li class="tt-submenu-wrap tt-submenu-master active">
+																				<a href="portfolio-grid-creative-1.html">JavaScript</a>
+																		</li>
+													<!-- End submenu (sub-master) -->
+						
+													<!-- Begin submenu (submenu master) -->
+																		<li class="tt-submenu-wrap tt-submenu-master">
+																				<a href="about-me.html">Node.js</a>
+																		</li>
+													<!-- End submenu (sub-master) -->
+						
+													<!-- Begin submenu (submenu master) -->
+																		<li class="tt-submenu-wrap tt-submenu-master">
+																				<a href="blog-list.html">Bootsrap</a>
+																		</li>
+													<!-- End submenu (sub-master) -->
+						
+																		<li><a href="contact.html">Contact</a></li>
+																	</ul>
+						
+													<!-- End main menu list -->
+													<!-- FIM main menu list -->
+						
+																</div> <!-- /.tt-main-menu-content -->
+															</div> <!-- /.tt-main-menu-inner -->
+														</div> <!-- /.tt-main-menu-holder -->
+						
+													</nav> 
 												</div> <!-- /.ttgr-item-inner -->
 											</div>
 											<!-- End tt-Grid item -->
