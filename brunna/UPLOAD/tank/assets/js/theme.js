@@ -1,8 +1,6 @@
 /* =================================================================
 * Template JS
-* 
-* Template:    Tank - Creative Portfolio Showcase HTML Website Template
-* Author:      Themetorium
+
 * URL:         https://brunnacroches.dev/
 *
 ================================================================= */

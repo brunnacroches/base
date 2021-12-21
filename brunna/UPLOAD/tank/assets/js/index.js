@@ -27,7 +27,7 @@ const statsEnabled = true;
 
 			function init() {
 
-				container = document.createElement('container');
+				container = document.createElement('ph-image-inner-glb');
 				document.body.appendChild(container);
 
 			  camera = new THREE.PerspectiveCamera( 75,  window.innerWidth / window.innerHeight, 1, 10000)
@@ -78,7 +78,7 @@ const statsEnabled = true;
 				} );
 				                  // ADD O ARQUIVO GLB 
           loader = new GLTFLoader()
-          loader.load('assets/img/page-header/my--avatar.glb', function(glb){
+          loader.load('my--avatar.glb', function(glb){
               createScene(glb.scene.children[ 0 ].geometry, 100, material );
               
               const children = glb.scene;
