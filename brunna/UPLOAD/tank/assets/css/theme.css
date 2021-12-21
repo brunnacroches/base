@@ -2751,7 +2751,7 @@ body:not(.is-mobile) .ttgr-cat-text > span::before {
 /* tt-Ggrid categories/filter nav 
 ================================== */
 .ttgr-cat-nav {
-	position: fixed;
+	position: relative;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -2796,13 +2796,15 @@ body:not(.is-mobile) .ttgr-cat-text > span::before {
 }
 .ttgr-cat-list > li {
 	position: relative;
+	display: inline-block
 }
 .ttgr-cat-list > li > a {
 	position: relative;
 	display: inline-block;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	font-size: calc(26px + 1.2vw);
+	padding-left: 50px;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	font-size: calc(5px + 1.2vw);
 	font-weight: bold;
 	font-weight: 700;
 	line-height: 1.2;
@@ -2813,29 +2815,34 @@ body:not(.is-mobile) .ttgr-cat-text > span::before {
 .ttgr-cat-list > li > a:focus,
 .ttgr-cat-list > li > a.active {
 	color: #FFF;
+	display: inline-block
 }
 .ttgr-cat-list > li:first-child > a {
-	padding-top: 0;
+	padding-top: 10px;
+	display: inline-block
 }.ttgr-cat-list > li:last-child > a {
 	padding-bottom: 0;
+	display: inline-block
 }
 
 /* tt-Ggrid categories list item counter */
 @media (min-width: 992px) {
 	.ttgr-cat-list {
 		counter-reset: ttgr-cat-list-counter;
+		display: inline-block
 	}
 	.ttgr-cat-list .ttgr-cat-item::before {
-		position: absolute;
+		position: relative;
 		counter-increment: ttgr-cat-list-counter;
 		content: "" counter(ttgr-cat-list-counter, decimal-leading-zero);
-		top: 5px;
-		left: -40px;
+		top: 0px;
+		left: 50px;
 		line-height: 1;
-		font-size: 14px;
+		font-size: 20;
 		font-weight: normal;
 		color: #FFF;
 		opacity: 0.4;
+		display: inline-block
 	}
 }
 
