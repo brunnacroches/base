@@ -225,10 +225,9 @@
 
 					<!-- Begin page header image  -->
 							<div class="ph-image">
-								<div class="ph-image-inner-glb">
-									<img src="assets/img/page-header/brunna-body.png" alt="Image">
-								</div>
-							</div> 
+    						<div id="ph-image-inner-glb">
+    							</div>
+  						</div>
 							<!-- Imagem do cabeçalho da página final -->
 
 							<!-- Comece a legenda do cabeçalho da página
@@ -333,10 +332,10 @@
 								* Use class "tt-heading-xsm", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set caption size (no class = default size).
 								* Use class "tt-heading-stroke" to enable stroke style.
 								* Use class "tt-heading-center" to align tt-Heading to center.
-								* Use prepared helper class "max-width-*" to add custom width if needed. Example: "max-width-800". More info about helper classes can be found in the file "helper.css".
+								* Use prepared helper class "max-width-*" to add custom width if needed. Example: "max-width-800". More info about helper classes can be found in the file "helper.css".ƒƒƒ
 								-->
 								<div class="tt-heading tt-heading-xxlg tt-heading-stroke tt-heading-center margin-bottom-10-p anim-fadeinup">
-									<h3 class="tt-heading-subtitle text-gray">Proudly Served</h3>
+									<h3 class="tt-heading-subtitle ƒbo text-gray">Proudly Served</h3>
 									<h2 class="tt-heading-title"> My Skillsets </h2>
 									<!-- <h3 class="tt-heading-subtitle text-gray">Subtitle</h3> -->
 								</div>
@@ -465,8 +464,24 @@
 		<script src="assets/vendor/isotope/packery-mode.pkgd.min.js"></script> <!-- Isotope Packery Mode JS (https://isotope.metafizzy.co/layout-modes/packery.html) -->
 		<script src="assets/vendor/lightgallery/js/lightgallery-all.min.js"></script> <!-- lightGallery Plugins JS (http://sachinchoolur.github.io/lightGallery) -->
 		<script src="assets/vendor/jquery.mousewheel.min.js"></script> <!-- A jQuery plugin that adds cross browser mouse wheel support (https://github.com/jquery/jquery-mousewheel) -->
+		<!-- <script src="assets/vendor/three.js-master.js/"></script>  -->
+
+		<script src="https://threejs.org/build/three.js"></script> 
+
+		<script type="module">
+			// Find the latest version by visiting https://cdn.skypack.dev/three.
+		
+			import { OrbitControls } from 'https://cdn.skypack.dev/three@0.135.0/examples/jsm/controls/OrbitControls.js';		
+			import Stats from 'https://cdn.skypack.dev/three@0.135.0/examples/jsm/controls/stats.js';	
+			
+		</script>
+
+		<script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/three-orbitcontrols@2.110.3/OrbitControls.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/three-stats@1.0.1/dist/index.js"></script>
 
 		<!-- Theme master JS -->
+		<script src="assets/js/index.js"></script>
 		<script src="assets/js/theme.js"></script>
 
 

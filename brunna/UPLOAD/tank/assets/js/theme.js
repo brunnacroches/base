@@ -40,9 +40,6 @@
 // Miscellaneous 
 //
 
-
-
-
 (function ($) {
 	'use strict';
 
@@ -1946,6 +1943,10 @@
 
 		}
 	}
+	// Portfolio list item info elements scrolling effects:
+	// =====================================================
+
+
 
 
 	// Portfolio list item info elements scrolling effects:
@@ -2532,55 +2533,6 @@
 	// Forms
 	// ================================================================
 
-	// Remove input placeholder on focus
-	$("input,textarea").focus(function () {
-		$(this).data("placeholder", $(this).attr("placeholder"))
-			.attr("placeholder", "");
-	}).blur(function () {
-		$(this).attr("placeholder", $(this).data("placeholder"));
-	}); 
-
-	// Form "Browse File" button info
-	$(document).on("change", ":file", function() {
-		var input = $(this),
-		numFiles = input.get(0).files ? input.get(0).files.length : 1,
-		label = input.val().replace(/\\/g, "/").replace(/.*\//, "");
-		input.trigger("fileselect", [numFiles, label]);
-	});
-	$(":file").on("fileselect", function(event, numFiles, label) {
-		var input = $(this).parents(".tt-form-file").find(".tt-file-info"),
-		log = numFiles > 1 ? numFiles + " files selected" : label;
-
-		if( input.length ) {
-			input.val(log);
-		} else {
-			if( log ) alert(log);
-		}
-	});
-
-
-	// Universal PHP Mail Feedback Script 
-	// (https://github.com/agragregra/uniMail)
-	// ========================================
-
-	// E-mail Ajax Send
-	$("#tt-contact-form").submit(function() { // Change (your contact form ID)
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", // Change (mail.php path)
-			data: th.serialize()
-		}).done(function() {
-			alert("Thank you. Your message has been sent!");
-			setTimeout(function() {
-			// Done Functions
-			th.trigger("reset");
-			}, 800);
-		});
-		return false;
-	});
-
-
 
 	// ================================================================
 	// Miscellaneous
@@ -2603,3 +2555,4 @@
 
 
 })(jQuery); 
+
