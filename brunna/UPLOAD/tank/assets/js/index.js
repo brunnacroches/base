@@ -28,9 +28,10 @@
 	function init() {
 
 		container = document.getElementById('ph-image-inner-glb');
+		
 		//document.body.appendChild(container);
 
-		camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100)
+		camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
 		camera.position.z = 4;
 		// camera.lookAt( 0, 0, 0);
 
@@ -38,8 +39,22 @@
 		scene = new THREE.Scene();
 		scene.background = new THREE.Color(0x060708);
 
-
-
+		function resizeCanvasToDisplaySize() {
+			const canvas = renderer.domElement;
+			// look up the size the canvas is being displayed
+			const width = canvas.clientWidth;
+			const height = canvas.clientHeight;
+		
+			// adjust displayBuffer size to match
+			if (canvas.width !== width || canvas.height !== height) {
+				// you must pass false here or three.js sadly fights the browser
+				renderer.setSize(width, height, false);
+				camera.aspect = width / height;
+				camera.updateProjectionMatrix();
+		
+				// update any render target sizes here
+			}
+		}
 		// LIGHTS
 
 		scene.add(new THREE.HemisphereLight(0x443333, 0x111122));
@@ -73,8 +88,8 @@
 
 
 		renderer = new THREE.WebGLRenderer();
-		renderer.setPixelRatio(window.devicePixelRatio);
 		renderer.setSize(window.innerWidth, window.innerHeight);
+		// renderer.setPixelRatio(window.devicePixelRatio);
 		container.appendChild(renderer.domElement);
 		renderer.outputEncoding = THREE.sRGBEncoding;
 
@@ -140,7 +155,8 @@
 	//
 
 	function animate() {
-
+		
+		// resizeCanvasToDisplaySize();
 		requestAnimationFrame(animate);
 
 		render();
