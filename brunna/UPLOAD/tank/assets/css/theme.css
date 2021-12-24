@@ -116,6 +116,24 @@ img {
 	height: auto;
 }
 
+.ph-image-inner-glb {
+	display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.ph-image-inner-glb >* {
+	width: 150px; 
+	height: 150px; 
+	float: left; 
+	margin: 1em;
+}
+
+canvas {
+	width: 100%;
+  height: 100%;
+}
+
 b, strong {
 	font-weight: bold;
 	font-weight: 700;

@@ -1,16 +1,20 @@
 	// Find the latest version by visiting https://cdn.skypack.dev/three.
-	import * as THREE from 'https://cdn.skypack.dev/three@0.135.0';
+	import * as THREE from 'https://cdn.skypack.dev/pin/three@v0.135.0-pjGUcRG9Xt70OdXl97VF/mode=imports,min/optimized/three.js';
 
 	import { OrbitControls } from 'https://cdn.skypack.dev/three@0.135.0/examples/jsm/controls/OrbitControls.js';
-	import Stats from 'https://cdn.skypack.dev/three@0.135.0/examples/jsm/libs/stats.module.js';
+
+	// import Stats from 'https://cdn.skypack.dev/three@0.135.0/examples/jsm/libs/stats.module.js';
+
 	import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.135.0/examples/jsm/loaders/GLTFLoader.js';
 
-	const statsEnabled = true;
+	// const statsEnabled = true;
 
-	let container, stats, loader, clock;
+	let container, loader;
 
-	let camera, scene, renderer, elf, mesh;
-
+	let camera, scene, renderer, mesh;
+	
+	// let elf; 
+	
 	let spotLight;
 
 	let mouseX = 0;
@@ -27,17 +31,19 @@
 
 	function init() {
 
+		// document.body.appendChild(container);
 		container = document.getElementById('ph-image-inner-glb');
 		
-		//document.body.appendChild(container);
 
 		camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
 		camera.position.z = 4;
 		// camera.lookAt( 0, 0, 0);
 
-		clock = new THREE.Clock();
+		
 		scene = new THREE.Scene();
 		scene.background = new THREE.Color(0x060708);
+		scene.geometry = new THREE.BoxGeometry(200, 200, 200);
+		// clock = new THREE.Clock();
 
 		function resizeCanvasToDisplaySize() {
 			const canvas = renderer.domElement;
@@ -78,12 +84,12 @@
 		loader = new GLTFLoader();
 		loader.load('assets/js/my--avatar.glb', function (glb) {
 			createScene(glb.scene.mesh);
-			createScene(glb.scene.elf);
+			// createScene(glb.scene.elf);
 			mesh = glb.scene;
-			elf = glb.scene;
+			// elf = glb.scene;
 			mesh.scale.set(0.2, 0.2, 0.2)
 			scene.add(mesh);
-			scene.add(elf);
+			// scene.add(elf);
 		})
 
 
@@ -97,17 +103,29 @@
 
 		// if ( statsEnabled ) {
 
-		stats = new Stats();
-		container.appendChild(stats.dom);
+		// stats = new Stats();
+		// container.appendChild(stats.dom);
 
 		// }
 
 		// EVENTS
 
 		window.addEventListener('mousemove', onWindowMouseMove);
+		function onWindowMousemove() {
+			camera.aspect = window.innerWidth / window.innerHeight
+			camera.updateProjectionMatrix()
+			renderer.setSize(window.innerWidth, window.innerHeight)
+			render()
+	}
 		window.addEventListener('resize', onWindowResize);
+		function onWindowResize() {
+			renderer.setSize(window.innerWidth, window.innerHeight);
+			camera.aspect = window.innerWidth / window.innerHeight;
+			camera.updateProjectionMatrix();
 
 	}
+	}
+
 
 	const controls = new OrbitControls(camera, renderer.domElement)
 	controls.enableDamping = true
@@ -125,23 +143,13 @@
 
 		mesh = new THREE.Mesh(geometry);
 
-		mesh.position.y = 10;
+		mesh.position.y = 15;
 		mesh.scale.set(scale);
 
-		mesh.castShadow = false;
-		mesh.receiveShadow = false;
+		mesh.castShadow = true;
+		mesh.receiveShadow = true;
 
 		scene.add(mesh);
-
-	}
-
-	//
-
-	function onWindowResize() {
-
-		renderer.setSize(window.innerWidth, window.innerHeight);
-		camera.aspect = window.innerWidth / window.innerHeight;
-		camera.updateProjectionMatrix();
 
 	}
 
@@ -160,8 +168,8 @@
 		requestAnimationFrame(animate);
 
 		render();
-		if (statsEnabled)
-			stats.update();
+		// if (statsEnabled)
+		// 	stats.update();
 
 	}
 
@@ -177,13 +185,13 @@
 
 		}
 
-		const delta = clock.getDelta();
+		// const delta = clock.getDelta();
 
-		if (elf !== undefined) {
+		// if (elf !== undefined) {
 
-			elf.rotation.y += delta * 0.1;
+		// 	elf.rotation.y += delta * 0.1;
 
-		}
+		// }
 
 		renderer.render(scene, camera);
 
