@@ -7,14 +7,14 @@
 	import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.135.0/examples/jsm/loaders/GLTFLoader.js';
 
 
-	let container;
-	let loader;
+	const statsEnabled = true;
 
-	// let document; 
+	let container, stats, loader;
 
 	let camera, scene, renderer;
 
-	let  mesh;
+	let mesh;
+
 	let spotLight;
 
 	let mouseX = 0;
@@ -23,20 +23,23 @@
 	let targetX = 0;
 	let targetY = 0;
 
-	const windowHalfX = window.innerWidth;
-	const windowHalfY = window.innerHeight;
+	const windowHalfX = window.innerWidth / 2;
+	const windowHalfY = window.innerHeight / 2;
 
 	init();
 	animate();
 
 	function init() {
 
+		container = document.getElementById('container');
+		document.getElementById("container").setAttribute("style","height:1px","float: right", "width: 25%", "display: inline")
 		camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-		camera.position.z = 4;
+		camera.position.z = 3;
+		camera.position.y = 1;
+		camera.position.x = 1;
 		
 		// document.body.appendChild(container);
-		container = document.getElementById('ph-image-inner-glb');
-		
+
 		renderer = new THREE.WebGLRenderer();
 		renderer.setSize(window.innerWidth, window.innerHeight);
 		renderer.outputEncoding = THREE.sRGBEncoding;
@@ -45,7 +48,7 @@
 		
 		scene = new THREE.Scene();
 		scene.background = new THREE.Color(0x060708);
-		scene.geometry = new THREE.BoxGeometry(200, 200, 200);
+		scene.geometry = new THREE.BoxGeometry(100, 100, 100);
 		// clock = new THREE.Clock();
 
 		function resizeCanvasToDisplaySize() {
@@ -91,6 +94,8 @@
 			mesh = glb.scene;
 			// elf = glb.scene;
 			mesh.scale.set(0.2, 0.2, 0.2)
+			mesh.position.x = 1;
+			mesh.position.y = -0.5;
 			scene.add(mesh);
 			// scene.add(elf);
 		})
@@ -153,7 +158,6 @@
 
 	function animate() {
 		
-		// resizeCanvasToDisplaySize();
 		requestAnimationFrame(animate);
 
 		render();
@@ -170,15 +174,6 @@
 			mesh.rotation.x += 0.08 * (targetY - mesh.rotation.x);
 
 		}
-
-		// const delta = clock.getDelta();
-
-		// if (elf !== undefined) {
-
-		// 	elf.rotation.y += delta * 0.1;
-
-		// }
-
 		renderer.render(scene, camera);
 
 	}
