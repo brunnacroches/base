@@ -34,9 +34,12 @@
 		container = document.getElementById('container');
 		document.getElementById("container").setAttribute("style","height:1px","float: right", "width: 25%", "display: inline")
 		camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-		camera.position.z = 3;
-		camera.position.y = 1;
-		camera.position.x = 1;
+		// (aumentar ele fica menor)
+		camera.position.z = 2;
+		// 
+		camera.position.y = 0.3;
+		// aumentar > para a esquerda
+		camera.position.x = 0;
 		
 		// document.body.appendChild(container);
 
@@ -51,22 +54,7 @@
 		scene.geometry = new THREE.BoxGeometry(100, 100, 100);
 		// clock = new THREE.Clock();
 
-		function resizeCanvasToDisplaySize() {
-			const canvas = renderer.domElement;
-			// look up the size the canvas is being displayed
-			const width = canvas.clientWidth;
-			const height = canvas.clientHeight;
-		
-			// adjust displayBuffer size to match
-			if (canvas.width !== width || canvas.height !== height) {
-				// you must pass false here or three.js sadly fights the browser
-				renderer.setSize(width, height, false);
-				camera.aspect = width / height;
-				camera.updateProjectionMatrix();
-		
-				// update any render target sizes here
-			}
-		}
+
 		// LIGHTS
 
 		scene.add(new THREE.HemisphereLight(0x443333, 0x111122));
@@ -94,8 +82,10 @@
 			mesh = glb.scene;
 			// elf = glb.scene;
 			mesh.scale.set(0.2, 0.2, 0.2)
+			// ir para a direita (aumentar)
 			mesh.position.x = 1;
-			mesh.position.y = -0.5;
+			// ir para baixo (aumentar)
+			mesh.position.y = -0.90;
 			scene.add(mesh);
 			// scene.add(elf);
 		})
@@ -120,18 +110,6 @@
 	}
 	}
 
-
-	const controls = new OrbitControls(camera, renderer.domElement)
-	controls.enableDamping = true
-	controls.enableZoom = true
-	controls.enablePan = true
-	controls.dampingFactor = true
-	controls.minDistance = 4
-	controls.maxDistance = 5
-	controls.autoRotate = false
-	// 		controls.zoomSpeed= 10
-	// 		controls.autoRotateSpeed= 0.5
-	// 		controls.rotateSpeed= -1.4
 
 	function createScene(geometry, scale) {
 
