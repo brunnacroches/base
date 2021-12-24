@@ -116,17 +116,12 @@ img {
 	height: auto;
 }
 
-.ph-image-inner-glb {
-	display: flex;
-  width: 100vw;
-  height: 100vh;
-}
 
 .ph-image-inner-glb >* {
 	width: 150px; 
 	height: 150px; 
 	float: left; 
-	margin: 1em;
+	margin: 1em;;
 }
 
 canvas {

@@ -3,18 +3,18 @@
 
 	import { OrbitControls } from 'https://cdn.skypack.dev/three@0.135.0/examples/jsm/controls/OrbitControls.js';
 
-	// import Stats from 'https://cdn.skypack.dev/three@0.135.0/examples/jsm/libs/stats.module.js';
 
 	import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.135.0/examples/jsm/loaders/GLTFLoader.js';
 
-	// const statsEnabled = true;
 
-	let container, loader;
+	let container;
+	let loader;
 
-	let camera, scene, renderer, mesh;
-	
-	// let elf; 
-	
+	// let document; 
+
+	let camera, scene, renderer;
+
+	let  mesh;
 	let spotLight;
 
 	let mouseX = 0;
@@ -31,13 +31,16 @@
 
 	function init() {
 
+		camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
+		camera.position.z = 4;
+		
 		// document.body.appendChild(container);
 		container = document.getElementById('ph-image-inner-glb');
 		
-
-		camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-		camera.position.z = 4;
-		// camera.lookAt( 0, 0, 0);
+		renderer = new THREE.WebGLRenderer();
+		renderer.setSize(window.innerWidth, window.innerHeight);
+		renderer.outputEncoding = THREE.sRGBEncoding;
+		container.appendChild(renderer.domElement);
 
 		
 		scene = new THREE.Scene();
@@ -92,21 +95,7 @@
 			// scene.add(elf);
 		})
 
-
-		renderer = new THREE.WebGLRenderer();
-		renderer.setSize(window.innerWidth, window.innerHeight);
-		// renderer.setPixelRatio(window.devicePixelRatio);
-		container.appendChild(renderer.domElement);
-		renderer.outputEncoding = THREE.sRGBEncoding;
-
 		//
-
-		// if ( statsEnabled ) {
-
-		// stats = new Stats();
-		// container.appendChild(stats.dom);
-
-		// }
 
 		// EVENTS
 
@@ -168,9 +157,6 @@
 		requestAnimationFrame(animate);
 
 		render();
-		// if (statsEnabled)
-		// 	stats.update();
-
 	}
 
 	function render() {
