@@ -118,15 +118,15 @@ img {
 
 
 .container>* {
-	width: 10px; 
-	height: 10px; 
+	width: 150px; 
+	height: 150px; 
 	float: right; 
-	margin: 0em;;
+	margin: 500em;;
 }
 
 canvas {
-	width: 30%;
-  height: 30%;
+	width: 100%;
+  height: 100%;
 }
 
 b, strong {
@@ -218,6 +218,7 @@ body {
 .ph-caption-title-ghost,
 .ph-caption-subtitle,
 .scroll-down-circle,
+/* .follow-me, */
 .made-with-love,
 .tt-ol-menu-toggle-btn-text,
 .tt-m-menu-toggle-btn-text,
@@ -2118,14 +2119,37 @@ a.ph-category:hover {
 	height: 250px;
 	z-index: 9;
 }
+
+/* .follow-me {
+  position: absolute;
+  display: block;
+  left: 70%;
+  bottom: -100px;
+  width: 200px;
+  height: 500px;
+  z-index: 9;
+} */
+
+/* //.follow-me  */
 @media (max-width: 1024px) {
 	.scroll-down-circle {
 		display: none;
 	}
 }
+/* //.follow-me  */
 #page-header:not(.ph-full) .scroll-down-circle { /* Display only on full scren page header! */
 	display: none;
 }
+
+/* .follow-me .sdc-icon {
+	position: absolute;
+	display: block;
+	left: 50%;
+	top: 50%;
+	font-size: 16px;
+	color: #999;
+	transform: translate(-50%, -50%);
+} */
 
 /* Scroll down circle icon */
 .scroll-down-circle .sdc-icon {
@@ -2140,15 +2164,37 @@ a.ph-category:hover {
 #page-header.ph-bg-image .scroll-down-circle .sdc-icon {
 	color: #FFF;
 }
-
+/* .follow-me .sdc-icon {
+	color: #FFF;
+} */
 /* Scroll down circle svg */
 .scroll-down-circle svg { 
 	width: 100%; 
 	animation: sdc-rotation 8s infinite linear;
 }
+
+/* .follow-me svg {
+	width: 100%; 
+	animation: sdc-rotation 8s infinite linear;
+} */
+
+/* .follow-me rect {
+	fill: #FFF; 
+} */
+
 .scroll-down-circle rect { 
 	fill: #FFF; 
 }
+/* 
+.follow-me text {
+	font-size: 33px;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 25px;
+	fill: #BBB;
+	transition: fill .2s;
+} */
+
 .scroll-down-circle text { 
 	font-size: 33px;
 	font-weight: normal;
@@ -2160,6 +2206,12 @@ a.ph-category:hover {
 .scroll-down-circle:hover text { 
 	fill: #FFF; 
 }
+
+/* .follow-me :hover text {
+	fill: #FFF; 
+} */
+
+/* //.follow-me  */
 #page-header.ph-bg-image .scroll-down-circle text {
 }
 
@@ -2630,9 +2682,12 @@ body.ph-bg-image-light-on:not(.tt-ol-menu-open) .tt-ol-menu-toggle-btn span::aft
 }
 
 /* Make scroll down circle dark */
+/* //.follow-me  */
 body.ph-bg-image-light-on #page-header:not(.ph-image-shadow) .scroll-down-circle text {
 	fill: #111;
 }
+
+/* follow-me */
 body.ph-bg-image-light-on #page-header:not(.ph-image-shadow) .scroll-down-circle .sdc-icon {
 	color: #555;
 }

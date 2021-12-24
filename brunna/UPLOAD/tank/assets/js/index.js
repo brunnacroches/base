@@ -36,7 +36,7 @@
 		camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
 		// (aumentar ele fica menor)
 		camera.position.z = 2;
-		// 
+		// aumentar > ele desce
 		camera.position.y = 0.3;
 		// aumentar > para a esquerda
 		camera.position.x = 0;
