@@ -190,19 +190,7 @@
 				<div id="content-wrap">
 
 					
-					<!-- 	///// Início do cabeçalho da página /////
-
-										* Use a classe "ph-full" para habilitar o tamanho da tela inteira.
-										* Use a classe "ph-cap-sm", "ph-cap-lg", "ph-cap-xlg" ou "ph-cap-xxlg" para definir o tamanho da legenda (sem classe = tamanho padrão).
-										* Use a classe "ph-center" para habilitar a posição do centro de conteúdo.
-										* Use a classe "ph-bg-image" para habilitar a imagem de fundo do cabeçalho da página (necessária para um único projeto de portfólio!).
-										* Use a classe "ph-bg-image-is-light" se necessário, torna os elementos escuros e mais visíveis se você usar uma imagem muito clara (efeito apenas com a classe "ph-bg-image").
-										* Use a classe "ph-image-shadow" para habilitar a imagem de fundo do cabeçalho da página (efeito apenas com a classe "ph-bg-image").
-										* Use a classe "ph-image-cropped" para cortar a imagem. Ele corrige as dimensões da imagem (sem efeito para "imagem ph-bg"!).
-										* Use a classe "ph-image-cover- *" para definir a opacidade da sobreposição de imagem. Por exemplo, "ph-image-cover-2" ou "ph-image-cover-2-5" (até "ph-image-cover-9-5").
-										* Use a classe "ph-content-parallax" para habilitar a paralaxe de conteúdo.
-										* Use a classe "ph-stroke" para habilitar o estilo do traço do título da legenda.
-					-->
+					<!-- 	///// Início do cabeçalho da página ///// 	-->
 					<div id="page-header" class="ph-full ph-cap-xxlg ph-center ph-image-cropped ph-image-cover-2 ph-content-parallax">
 						<div class="page-header-inner tt-wrap">
 
@@ -274,14 +262,6 @@
 									
 						<div class="tt-section no-padding-bottom">
 							<div class="tt-section-inner">
-
-								<!-- Begin portfolio grid (works combined with tt-Ggrid!)
-								========================== 
-								* Use class "pgi-hover" to enable portfolio grid item hover effect (behavior depends on "ttgr-gap-*" classes below!).
-								* Use class "pgi-cap-hover" to enable portfolio grid item caption hover effect (effect only with class "pgi-cap-inside"! Also no effect on mobile devices!).
-								* Use class "pgi-cap-center" to position portfolio grid item caption to center.
-								* Use class "pgi-cap-inside" to position portfolio grid item caption to inside.
-								--> 
 								<div id="portfolio-grid" class="pgi-cap-inside pgi-cap-hover">
 
 									<!-- Begin tt-Grid
@@ -327,61 +307,38 @@
 										<!-- COMEÇO main menu list -->
 										<!-- Begin main menu list -->
 														<ul class="ttgr-cat-list">
-
-															<li class="ttgr-cat-item">
-																<a href="#" data-filter=".all">All</a>
-															</li>
-										<!-- End submenu (sub-master) -->
-			
-										<!-- Begin submenu (submenu master) -->
-															<li class="ttgr-cat-item">
-																<a href="#" data-filter=".node">Node</a>
-															</li>
-										<!-- End submenu (sub-master) -->
-			
-										<!-- Begin submenu (submenu master) -->
-															<li class="ttgr-cat-item">
-																	<a href="#" data-filter=".three">Three</a>
-															</li>
-										<!-- End submenu (sub-master) -->
-			
-										<!-- Begin submenu (submenu master) -->
-															<li class="ttgr-cat-item">
-																<a href="#" data-filter=".bootstrap">Bootstrap</a>
-															</li>
-										<!-- End submenu (sub-master) -->
-			
-															<li class="ttgr-cat-item">
-																<a href="#" data-filter=".javascript">JavasCript</a>
-															</li>
-										<!-- Begin submenu (submenu master) -->
-															<li class="ttgr-cat-item">
-																<a href="#" data-filter=".htmlcss">HTML+CSS</a>
-															</li>
+															<li class="ttgr-cat-item"><a href="#" class="active">All</a></li>
 										<!-- End submenu (sub-master) -->
 										<!-- Begin submenu (submenu master) -->
-															<li class="ttgr-cat-item">
-																<a href="#" data-filter=".python">Python</a>
-															</li>
+															<li class="ttgr-cat-item"><a href="#" data-filter=".node">Node</a></li>
 										<!-- End submenu (sub-master) -->
-												</ul>
-			
-										<!-- End main menu list -->
-										<!-- FIM main menu list -->
-			
+										<!-- Begin submenu (submenu master) -->
+															<li class="ttgr-cat-item"><a href="#" data-filter=".three">Three</a></li>
+										<!-- End submenu (sub-master) -->
+										<!-- Begin submenu (submenu master) -->
+															<li class="ttgr-cat-item"><a href="#" data-filter=".bootstrap">Bootstrap</a></li>
+										<!-- End submenu (sub-master) -->
+															<li class="ttgr-cat-item"><a href="#" data-filter=".javascript">JavasCript</a></li>
+										<!-- Begin submenu (submenu master) -->
+															<li class="ttgr-cat-item"><a href="#" data-filter=".htmlcss">HTML+CSS</a></li>
+										<!-- End submenu (sub-master) -->
+										<!-- Begin submenu (submenu master) -->
+															<li class="ttgr-cat-item"><a href="#" data-filter=".python">Python</a></li>
+										<!-- End submenu (sub-master) -->
+														</ul>
 													</div> <!-- /.tt-main-menu-content -->
 												</div> <!-- /.tt-main-menu-inner -->
 											</div> <!-- /.tt-main-menu-holder -->
-			
 										</nav>
+
 										<!-- Begin tt-Grid items wrap  -->
 										<div class="tt-grid-items-wrap isotope-items-wrap">
 											<!-- 01 COMECO PROJETO TEXT CIRCULAR EFFECT -->
 											<!-- Begin tt-Grid item -->
-											<div class="tt-grid-item isotope-item people">
+											<div class="tt-grid-item isotope-item node">
 												<div class="ttgr-item-inner">
 													<div class="portfolio-grid-item">
-														<a href="#" class="pgi-image-wrap" data-cursor="View<br>Project">
+														<a href="#" data-filter=".node" class="pgi-image-wrap" data-cursor="View<br>Project">
 															<div class="pgi-image-holder cover-opacity-2">
 																<div class="pgi-image-inner anim-zoomin">
 																	<figure class="pgi-video-wrap ttgr-height">
@@ -404,8 +361,6 @@
 															</div> <!-- /.pgi-caption-inner -->
 														</div> <!-- /.pgi-caption -->
 													</div>
-													<!-- End portfolio grid item -->
-
 												</div> <!-- /.ttgr-item-inner -->
 											</div>
 											<!-- End tt-Grid item -->
@@ -413,7 +368,7 @@
 
 											<!-- 02 COMECO PROJETO ANIMATION-TEXT-SCROLLING -->
 											<!-- Begin tt-Grid item -->
-											<div class="tt-grid-item isotope-item people">
+											<div class="tt-grid-item isotope-item node">
 												<div class="ttgr-item-inner">
 													<div class="portfolio-grid-item">
 														<a href="#" class="pgi-image-wrap" data-cursor="View<br>Project">
@@ -448,7 +403,7 @@
 
 											<!-- 03 COMECO TRANSICAO PAGINA NODE -->
 											<!-- Begin tt-Grid item -->
-											<div class="tt-grid-item isotope-item people">
+											<div class="tt-grid-item isotope-item node">
 												<div class="ttgr-item-inner">
 													<div class="portfolio-grid-item">
 														<a href="#" class="pgi-image-wrap" data-cursor="View<br>Project">
@@ -483,7 +438,7 @@
 
 											<!-- 04 COMECO PREJETO ESPORTES CSS -->
 											<!-- Begin tt-Grid item -->
-											<div class="tt-grid-item isotope-item creative">
+											<div class="tt-grid-item isotope-item htmlcss">
 												<div class="ttgr-item-inner">
 													<div class="portfolio-grid-item">
 														<a href="#" class="pgi-image-wrap" data-cursor="View <br> Project">
@@ -517,7 +472,7 @@
 
 											<!-- Begin tt-Grid item -->
 											<!-- 05 COMECO PROJETO FINFANS -->
-											<div class="tt-grid-item isotope-item people">
+											<div class="tt-grid-item isotope-item bootstrap">
 												<div class="ttgr-item-inner">
 
 													<!-- Begin portfolio grid item 
@@ -556,7 +511,7 @@
 
 											<!-- 06 COMECO PROJETO AUTO ROTATE -->
 											<!-- Begin tt-Grid item -->
-											<div class="tt-grid-item isotope-item people">
+											<div class="tt-grid-item isotope-item three">
 												<div class="ttgr-item-inner">
 													<div class="portfolio-grid-item">
 														<a href="#" class="pgi-image-wrap" data-cursor="View<br>Project">
@@ -591,7 +546,7 @@
 
 											<!-- 07 COMECO PROJETO SITE SPOTIFY -->
 											<!-- Begin tt-Grid item -->
-											<div class="tt-grid-item isotope-item nature">
+											<div class="tt-grid-item isotope-item bootstrap">
 												<div class="ttgr-item-inner">
 													<div class="portfolio-grid-item">
 														<a href="#" class="pgi-image-wrap" data-cursor="View<br>Project">
@@ -624,7 +579,7 @@
 
 											<!-- 08 COMECO PROJETO DANCE -->
 											<!-- Begin tt-Grid item -->
-											<div class="tt-grid-item isotope-item people">
+											<div class="tt-grid-item isotope-item three">
 												<div class="ttgr-item-inner">
 													<div class="portfolio-grid-item">
 														<a href="#" class="pgi-image-wrap" data-cursor="View<br>Project">
@@ -658,7 +613,7 @@
 
 											<!-- 09 COMECO PROJETO FARMACIA  -->
 											<!-- Begin tt-Grid item -->
-											<div class="tt-grid-item isotope-item branding">
+											<div class="tt-grid-item isotope-item javascript">
 												<div class="ttgr-item-inner">
 													<div class="portfolio-grid-item">
 														<a href="#" class="pgi-image-wrap" data-cursor="View<br>Project">
@@ -689,7 +644,7 @@
 
 											<!-- 10 COMECO PROJETO CODES OPEN -->
 											<!-- Begin tt-Grid item -->
-											<div class="tt-grid-item isotope-item people">
+											<div class="tt-grid-item isotope-item htmlcss">
 												<div class="ttgr-item-inner">
 													<!-- Begin portfolio grid item 
 													===============================
@@ -726,7 +681,7 @@
 
 											<!-- 11 COMECO PROJETO AVANCADO POINTER -->
 											<!-- Begin tt-Grid item -->
-											<div class="tt-grid-item isotope-item people">
+											<div class="tt-grid-item isotope-item three">
 												<div class="ttgr-item-inner">
 													<div class="portfolio-grid-item">
 														<a href="#" class="pgi-image-wrap" data-cursor="View<br>Project">
@@ -764,13 +719,8 @@
 											<!-- 12 COMECO PROJETO 18 - SPECULAR - MAP -->
 											<!-- Begin tt-Grid item
 											======================== -->
-											<div class="tt-grid-item isotope-item people">
+											<div class="tt-grid-item isotope-item three">
 												<div class="ttgr-item-inner">
-
-													<!-- Begin portfolio grid item 
-													===============================
-													* Use class "pgi-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pgi-cap-inside" is enabled on "portfolio-grid"!).
-													-->
 													<div class="portfolio-grid-item">
 														<a href="#" class="pgi-image-wrap" data-cursor="View<br>Project">
 															<!-- Use class "cover-opacity-*" to set 
@@ -806,7 +756,7 @@
 
 											<!-- 13 COMECO PROJETO FOLLOW CURSOR -->
 											<!-- Begin tt-Grid item -->
-											<div class="tt-grid-item isotope-item people">
+											<div class="tt-grid-item isotope-item three">
 												<div class="ttgr-item-inner">
 
 													<div class="portfolio-grid-item">
@@ -843,7 +793,7 @@
 
 											<!-- 14 COMECO PROJETO CALCULADORA -->
 											<!-- Begin tt-Grid item -->
-											<div class="tt-grid-item isotope-item nature">
+											<div class="tt-grid-item isotope-item javascript">
 												<div class="ttgr-item-inner">
 													<div class="portfolio-grid-item">
 														<a href="#" class="pgi-image-wrap" data-cursor="View<br>Project">
@@ -877,7 +827,7 @@
 											<!-- 15 COMECO PROJETO PARTE AVANCADA 04 -->
 											<!-- Begin tt-Grid item
 											======================== -->
-											<div class="tt-grid-item isotope-item people">
+											<div class="tt-grid-item isotope-item three">
 												<div class="ttgr-item-inner">
 													<div class="portfolio-grid-item">
 														<a href="#" class="pgi-image-wrap" data-cursor="View<br>Project">
@@ -913,7 +863,7 @@
 											 <!-- 16 COMECO PROJETO PIZZARIA -->
 											<!-- Begin tt-Grid item
 											======================== -->
-											<div class="tt-grid-item isotope-item branding">
+											<div class="tt-grid-item isotope-item htmlcss">
 												<div class="ttgr-item-inner">
 
 													<!-- Begin portfolio grid item 
