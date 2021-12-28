@@ -1,0 +1,19 @@
+{
+  "name": "base",
+  "version": "1.0.0",
+  "description": "brunnacroches.dev",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunnacroches/base.git"
+  },
+  "author": "Brunna Croches",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunnacroches/base/issues"
+  },
+  "homepage": "https://github.com/brunnacroches/base#readme"
+}
