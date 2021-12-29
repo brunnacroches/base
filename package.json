@@ -1,10 +1,11 @@
 {
   "name": "base",
   "version": "1.0.0",
-  "description": "brunnacroches.dev",
-  "main": "index.js",
+  "description": "Project about portifolio Brunna Croches",
+  "main": "html.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node src"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,14 @@
   "homepage": "https://github.com/brunnacroches/base#readme",
   "keywords": [
     "portifolio"
-  ]
+  ],
+  "dependencies": {
+    "express": "^4.17.2",
+    "webpack": "^5.65.0"
+  },
+  "devDependencies": {
+    "raw-loader": "^4.0.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.1"
+  }
 }
