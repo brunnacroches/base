@@ -2,10 +2,9 @@
   "name": "base",
   "version": "1.0.0",
   "description": "Project about portifolio Brunna Croches",
-  "main": "html.js",
+  "main": "index.js, theme.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node src"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
