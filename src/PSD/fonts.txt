@@ -1,0 +1,15 @@
+
+Fonts used for PSD.
+
+
+Logo font 
+==========
+
+Playfair Display: https://fonts.google.com/specimen/Playfair+Display
+
+
+Signature font 
+===============
+
+Smooth Stone: https://befonts.com/smooth-stone-script-font.html
+
